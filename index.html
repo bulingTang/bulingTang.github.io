@@ -1,36 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang='zh'>
     <head>
         <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css">
         <link href="styles/style.css" rel='stylesheet' type="text/css">
         <meta charset="utf-8">
         
-        <title>这是一个变化的page</title>
-        
+        <title>lsp blog</title>
+        <link rel="shortcut icon" href="images/firefox1.png" type="image/x-icon">
     </head>
     <body>
-            <script src="scripts/main.js" async></script>
+        <header>
+            我是header
+        </header>    
+
+        <nav>
+            <ul>
+                <li><a href="#">主页</a></li>
+                <li><a href="#">主页2</a></li>
+                <li><a href="#">主页3</a></li>
+                <!-- 共n个导航栏项目，省略…… -->
+              </ul>
+        
+              <form> <!-- 搜索栏是站点内导航的一个非线性的方式。 -->
+                <input type="search" name="q" placeholder="要搜索的内容">
+                <input type="submit" value="搜索">
+              </form>
+        </nav>
+
+        <main> <!-- 网页主体内容 -->
+            <article>
+              此处包含一个 article（一篇文章），内容略……
+            </article>
+            
+            <aside> <!-- 侧边栏在主内容右侧 -->
+              <h2>相关链接</h2>
+              <ul>
+                <li><a href="#">这是一个超链接</a></li>
+                <!-- 侧边栏有n个超链接，略略略…… -->
+              </ul>
+            </aside>
+          </main>
+          <footer> <!-- 本站所有网页的统一页脚 -->
+            <p>© 2050 某某保留所有权利</p>
+          </footer>
+
         <h1>我是一级标题</h1>
         <h2>我是二级标题</h2>
-        <ul>面包</ul>
-        <ul>牛奶</ul>
-        <ul>香蕉</ul>
-
+        <p>Japanese example: ご飯が熱い。</p>
         <ul>
-            <li>面包</li>
-            <li>牛奶</li>
-            <li>香蕉</li>
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="pic.html" >Pic</a></li>
+            <li><a href="pro.html" >Pro</a></li>
         </ul>
+
+      
         <h4>css-id</h4>
         <p id="my-id">我是id段测试文本</p>
         <p id="my-id2">我是id2段测试文本</p>
         <h4>css-class</h4>
         <p class="classtest">我是id2段测试文本</p>
+        <p id="classtest"><span>我是</span>id2段测试文本</p>
         <p id="classtest">我是id2段测试文本</p>
-        <p id="classtest">我是id2段测试文本</p>
-
-        <a href="http://www.baidu.com">Mozilla</a>
+        <a href="file:///Users/lvshaoping/lsp/workSpace/web/bulingTang.github.io/index.html"
+        download="file:///Users/lvshaoping/lsp/workSpace/web/bulingTang.github.io/index.html">
+       Download Latest Firefox for Windows (64-bit) (English, US)
+     </a>
+     <div class="figure">
+     <img 
+     alt ='测试图片'
+     src='https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg'>
+     <figcaption>曼彻斯特大学博物馆展出的一只霸王龙的化石</figcaption>   
+     </div>
+     <a href="http://www.baidu.com">Mozilla</a>
         <!-- <img src="./images/firefox1.png" alt="MyTestImage"> -->
         <button>切换用户</button>
+        <script src="scripts/main.js" async></script>
     </body>
 </html>

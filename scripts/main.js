@@ -1,14 +1,17 @@
 let myHead = document.querySelector('h1')
 myHead.textContent='hello world'
 let imgSrc = document.querySelector('img');
-imgSrc.onclick=function(){
-    let mySrc = imgSrc.getAttribute('src')
-    if(mySrc === './images/firefox1.png'){
-        imgSrc.setAttribute('src','./images/firefox2.png')
-    }else{
-        imgSrc.setAttribute('src','./images/firefox1.png')
+if(imgSrc){
+    imgSrc.onclick=function(){
+        let mySrc = imgSrc.getAttribute('src')
+        if(mySrc === './images/firefox1.png'){
+            imgSrc.setAttribute('src','./images/firefox2.png')
+        }else{
+            imgSrc.setAttribute('src','./images/firefox1.png')
+        }
     }
 }
+
 
 
 function setHeading(name) {
@@ -30,4 +33,14 @@ function setHeading(name) {
   }
   
   let myButton = document.querySelector('button'); 
-  myButton.onclick = ()=>setUserName;;
+  myButton.onclick = setUserName;;
+
+//   let ulList = document.getElementsByTagName('li');
+//   for(let i = 0;i<ulList.length;i++){
+//     ulList[i].onclick = function(){
+//         console.log('lsp===',ulList[i])
+//         ulList[i].textContent=name
+//     };
+//   }
+  
+  
